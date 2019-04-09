@@ -1,6 +1,6 @@
 <h2>Marketplace</h2>
 
-<div *ngFor="let game of games" class="card" (click)="goToDetailPage(game)">
+<div *ngFor="let game of games | async" class="card" (click)="goToDetailPage(game)">
   <div class="card-body">
     <h5>{{game.title}} by {{game.author}}</h5>
   </div>

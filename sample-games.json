@@ -1,0 +1,27 @@
+{ "games": [{
+    "title": "Settlers of Catan",
+    "author": "Some Person",
+    "description": " great way to destroy friendships",
+    "id": "1"
+    }, {
+    "title": "Monopoly",
+    "author": "Some Other Person",
+    "description": "Learn about capitalism",
+    "id": "2"
+      }, {
+    "title": "Pictionary",
+    "author": "Some Other Other Person",
+    "description": "See how bad your friends are at drawing",
+    "id": "3"
+      }, {
+    "title": "Pandemic",
+    "author": "Some random person",
+    "description": "Something about illness",
+    "id": "4"
+      }, {
+    "title": "Candy Land",
+    "author": "Someone",
+    "description": "Rot your teeth",
+    "id": "5"
+      }]
+}
