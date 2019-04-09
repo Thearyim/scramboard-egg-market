@@ -9,6 +9,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { routing } from "./app.routing";
 import { AboutComponent } from './about/about.component';
 import { MarketplaceComponent } from './marketplace/marketplace.component';
+import { GameDetailComponent } from './game-detail/game-detail.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { MarketplaceComponent } from './marketplace/marketplace.component';
     AppComponent,
     WelcomeComponent,
     AboutComponent,
-    MarketplaceComponent
+    MarketplaceComponent,
+    GameDetailComponent
   ],
   imports: [
     BrowserModule,
