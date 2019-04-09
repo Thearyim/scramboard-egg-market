@@ -22,7 +22,7 @@ export class GameDetailComponent implements OnInit {
       console.log(urlParameters);
       this.gameId = parseInt(urlParameters['id']);
     });
-    this.gameToDisplay = this.gameService.getGameById(this.gameId);
+    // this.gameToDisplay = this.gameService.getGameById(this.gameId);
   }
 
 }

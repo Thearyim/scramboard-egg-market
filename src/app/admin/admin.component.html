@@ -1,0 +1,24 @@
+<div class="card">
+  <div class="card-header"><h3>Add New Game to Inventory</h3></div>
+
+  <div class="card-body">
+    <div>
+      <label>Game Title:</label>
+      <br>
+      <input #newTitle>
+    </div>
+
+    <div>
+      <label>Game Author:</label>
+      <br>
+      <input #newAuthor>
+    </div>
+
+    <div>
+      <label>Game Description:</label>
+      <br>
+      <textarea #newDescription></textarea>
+    </div>
+    <button (click)="submitForm(newTitle.value, newAuthor.value, newDescription.value); newTitle.value=''; newAuthor.value=''; newDescription.value=''">Add</button>
+  </div>
+</div>

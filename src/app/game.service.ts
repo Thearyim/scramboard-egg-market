@@ -17,11 +17,11 @@ export class GameService {
   }
 
   getGameById(gameId: number){
-    for(let i = 0; i <= GAMES.length - 1; i++){
-      if (GAMES[i].id === gameId){
-        return GAMES[i];
-      }
-    }
+    // for(let i = 0; i <= GAMES.length - 1; i++){
+    //   if (GAMES[i].id === gameId){
+    //     return GAMES[i];
+    //   }
+    // }
   }
 
 }

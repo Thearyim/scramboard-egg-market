@@ -14,7 +14,7 @@ export class MarketplaceComponent implements OnInit {
   games: FirebaseListObservable<any[]>;
 
   goToDetailPage(clickedGame: Game){
-    this.router.navigate(["games", clickedGame.id]);
+    // this.router.navigate(["games", clickedGame.id]);
   }
 
   constructor(private router: Router, private gameService: GameService) { }
