@@ -13,8 +13,8 @@ import { FirebaseListObservable } from "angularfire2/database"
 export class MarketplaceComponent implements OnInit {
   games: FirebaseListObservable<any[]>;
 
-  goToDetailPage(clickedGame: Game){
-    // this.router.navigate(["games", clickedGame.id]);
+  goToDetailPage(clickedGame){
+    this.router.navigate(["games", clickedGame.$key]);
   }
 
   constructor(private router: Router, private gameService: GameService) { }

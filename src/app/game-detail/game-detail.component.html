@@ -1,5 +1,5 @@
 <div>
-  <h3>{{gameToDisplay.title}}</h3>
-  <h4>{{gameToDisplay.author}}</h4>
-  <p>{{gameToDisplay.description}}</p>
+  <h3>{{(gameToDisplay | async)?.title}}</h3>
+  <h4>{{(gameToDisplay | async)?.author}}</h4>
+  <p>{{(gameToDisplay | async)?.description}}</p>
 </div>
