@@ -16,6 +16,10 @@ export class GameService {
     return this.games;
   }
 
+  addGame(newGame: Game){
+    this.games.push(newGame);
+  }
+
   getGameById(gameId: number){
     // for(let i = 0; i <= GAMES.length - 1; i++){
     //   if (GAMES[i].id === gameId){
