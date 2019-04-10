@@ -12,6 +12,7 @@ import { FirebaseListObservable } from "angularfire2/database"
 })
 export class MarketplaceComponent implements OnInit {
   games: FirebaseListObservable<any[]>;
+  currentRoute: string = this.router.url;
 
   goToDetailPage(clickedGame){
     this.router.navigate(["games", clickedGame.$key]);

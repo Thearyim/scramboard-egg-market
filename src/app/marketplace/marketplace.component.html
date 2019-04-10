@@ -1,7 +1,12 @@
 <h2>Marketplace</h2>
 
-<div *ngFor="let game of games | async" class="card" (click)="goToDetailPage(game)">
+<div *ngFor="let game of games | async" class="card">
   <div class="card-body">
-    <h5>{{game.title}} by {{game.author}}</h5>
+    <h5 (click)="goToDetailPage(game)" >{{game.title}} by {{game.author}}</h5>
+    <div *ngIf="currentRoute === '/admin'">
+      {{game.description}}
+      <hr>
+      <app-edit-game [selectedGame]="game"></app-edit-game>
+    </div>
   </div>
 </div>

@@ -1,0 +1,16 @@
+<h4>Edit Game</h4>
+
+<label>New Game Title:</label>
+<input [(ngModel)]="selectedGame.title">
+<br>
+
+<label>New Game Author:</label>
+<input [(ngModel)]="selectedGame.author">
+<br>
+
+<label>New Game Description:</label>
+<input [(ngModel)]="selectedGame.description">
+
+<button (click)="beginUpdatingGame(selectedGame)">Update</button>
+<hr>
+<button (click)="beginDeletingGame(selectedGame)">Delete</button>
