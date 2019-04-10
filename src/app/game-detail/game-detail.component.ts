@@ -21,7 +21,9 @@ export class GameDetailComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
       this.gameId = urlParameters['id'];
     });
-    this.gameToDisplay = this.gameService.getGameById(this.gameId);
+    this.gameService.getGameById(this.gameId).subscribe(dataLastEmittedFromObserver => {
+      this.gameToDisplay = new Game(dataLastEmittedFromObserver.title, dataLastEmittedFromObserver.author, dataLastEmittedFromObserver.description);
+    });
   }
 
 }
